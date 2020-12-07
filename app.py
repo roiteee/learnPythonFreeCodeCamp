@@ -1,11 +1,12 @@
-print(2)
-print(2.89893)
-print(-32.399)
-print(3 +4.5)
-print(3*4+5) #17
-print(3*(4+5)) #27
-print(10%3) #Modulus ie. remainder   1
+from math import *
 
-my_num = 5
-#print(my_num + " is my favorite number") #error int + string won't go
-print(str(my_num) + " is my favorite number")
+print(max(4,6))
+print(min(5,10))
+print(round(3.2)) #3
+print(round(3.85)) #4
+
+#functions in math library
+print(floor(3.7)) #3 chops off decimal
+print(ceil(3.7)) #4
+print(sqrt(36)) #6
+
