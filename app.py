@@ -1,8 +1,20 @@
-# Mad Libs Game
-color = input("Enter a color: ")
-plural_noun = input("Enter a plural noun: ")
-celebrity = input("Enter a celebrity: ")
+friends1 = ["Kevin", 2, True]
+print(friends1)
 
-print("Roses are "+color)
-print(plural_noun + " are blue")
-print("I love " + celebrity)
+friends = ["Kevin", "Karen", "Jim"]
+print(friends[2]) #Jim
+
+print(friends[-2]) #Karen
+
+friends.append("Oscar")
+friends.append("Toby")
+
+print(friends)
+
+print(friends[1:]) #2nd to last
+print(friends[1:3]) #2nd to 3rd not including 4
+
+friends[1] = "Mike"  #Mike instead of Karen
+print(friends)
+
+
