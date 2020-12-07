@@ -1,20 +1,32 @@
-friends1 = ["Kevin", 2, True]
-print(friends1)
-
-friends = ["Kevin", "Karen", "Jim"]
-print(friends[2]) #Jim
-
-print(friends[-2]) #Karen
-
-friends.append("Oscar")
-friends.append("Toby")
-
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby", "Jim"]
+lucky_numbers = [4,8,5,16,23,4]
 print(friends)
 
-print(friends[1:]) #2nd to last
-print(friends[1:3]) #2nd to 3rd not including 4
-
-friends[1] = "Mike"  #Mike instead of Karen
+friends.extend(lucky_numbers)
 print(friends)
 
+friends.append("Creed")
+print(friends)
 
+friends.insert(1, "Kelly") #inserts at 2nd position and all other gets pushed
+print(friends)
+
+friends.remove("Kevin")
+print(friends)
+
+#friends.clear() #[] removes all
+friends.pop() #removes last element
+print(friends)
+
+print(friends.index(4)) 
+#print(friends.index('oscar')) #error
+print(friends.index('Toby'))
+print(friends.count('Jim'))
+
+lucky_numbers.sort()
+print(lucky_numbers)
+lucky_numbers.reverse()
+print(lucky_numbers)
+
+friends2 = friends.copy()
+print(friends2)
