@@ -1,13 +1,11 @@
-phrase = "Girrafe Academy"
-print(phrase)
-print(phrase + " is cool.")
-print(phrase.lower())
-print(phrase.isupper())
-print(phrase.upper())
-print(phrase.upper().isupper())
-print(len(phrase))
-print(phrase[0])
-print(phrase.index("d"))
-print(phrase.index("a"))
-# print(phrase.index("z")) #error substring not found
-print(phrase.replace("Girrafe", "Elephant"))
+print(2)
+print(2.89893)
+print(-32.399)
+print(3 +4.5)
+print(3*4+5) #17
+print(3*(4+5)) #27
+print(10%3) #Modulus ie. remainder   1
+
+my_num = 5
+#print(my_num + " is my favorite number") #error int + string won't go
+print(str(my_num) + " is my favorite number")
