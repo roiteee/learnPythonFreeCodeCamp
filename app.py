@@ -1,9 +1,8 @@
-num1 = input("Enter a number: ") #by default this is string
-num2 = input("Enter another number: ")
+# Mad Libs Game
+color = input("Enter a color: ")
+plural_noun = input("Enter a plural noun: ")
+celebrity = input("Enter a celebrity: ")
 
-result = float(num1)+float(num2) #int if no decimal requirement
-print("The sum is " + str(result))
-
-
-
-
+print("Roses are "+color)
+print(plural_noun + " are blue")
+print("I love " + celebrity)
