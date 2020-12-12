@@ -1,6 +1,6 @@
-def say_hi(name, age):
-    print("Hello "+ name +". You're " + age)
+def cube(num):
+    return num*num*num
 
-say_hi("Mike", "90")
-say_hi("Steve", "12")
-say_hi("Rohit", "25")
+
+cube(4)  #this statement is not assigned to anything or printed
+print(cube(43))    
