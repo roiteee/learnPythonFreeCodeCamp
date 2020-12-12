@@ -1,6 +1,6 @@
-def say_hi():
-    print("Hello User")
+def say_hi(name, age):
+    print("Hello "+ name +". You're " + age)
 
-print("Top")
-say_hi() #Order is maintained
-print("Bottom")
+say_hi("Mike", "90")
+say_hi("Steve", "12")
+say_hi("Rohit", "25")
