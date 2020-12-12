@@ -1,5 +1,6 @@
-coordinates = (4,5)
-print(coordinates)
-print(coordinates[0])
+def say_hi():
+    print("Hello User")
 
-#coordinates[1]=10 #error   tuple doesn't support item assignment
+print("Top")
+say_hi() #Order is maintained
+print("Bottom")
