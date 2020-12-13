@@ -1,13 +1,18 @@
-print(2**3)
+#2d lists
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+    ]
+print(number_grid[3][0]) #0
+print(number_grid[2][1]) #8
 
-#Similar self made function
-def raise_to_power(base_num, pow_num):
-    result = 1
-    for index in range(pow_num):
-        result *= base_num
-    return result
+for row in number_grid:
+    print(row)
 
-print(raise_to_power(2,3))
+#Nested loops
+for row in number_grid:
+    for column in row:
+        print(column)
 
-
-    
