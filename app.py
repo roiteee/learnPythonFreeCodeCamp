@@ -1,7 +1,7 @@
-i = 1
-while i<= 10:    #prints 1 to 10
-    print(i)
-    i += 1
+secret_word = "giraffe"
+guess = ""
 
-print("Done with the loop")
-    
+while guess != secret_word:
+    guess = input("Enter Guess: ")
+
+print("You won") #Program comes here only when you've guessed right
