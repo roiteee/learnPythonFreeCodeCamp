@@ -12,5 +12,8 @@ no need to # everytime
 try:
     number2 = int(input("Enter an integer"))
     print(number2)
-except:
-    print("Invalid input")
+except ZeroDivisionError:
+    print("Divided by 0")
+except ValueError as err:
+    #print("Invalid input")
+    print(err)
