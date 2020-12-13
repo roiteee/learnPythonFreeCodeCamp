@@ -1,14 +1,18 @@
-num1 = float(input("Enter 1st number: "))
-num2 = float(input("Enter 2nd number: "))
-op = input("Enter operator")
+monthConversions = { #Dictionaries- key: value pair, keys can't be repeated
+    "Jan": "January",
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November",
+    "Dec": "December"
+    }
 
-if op == "+":
-    print(num1+num2)
-elif op == "-":
-    print(num1-num2)
-elif op == "/":
-    print(num1/num2)
-elif op == "*":
-    print(num1*num2)
-else:
-    print("Invalid operator")
+print(monthConversions["Sep"])
+#print(monthConversions["August"]) #Error no key "August"
+print(monthConversions.get("August", "Not a valid key"))     #Can assign defaults if key not found
