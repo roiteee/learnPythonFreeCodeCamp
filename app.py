@@ -1,19 +1,12 @@
-#Single line comment
-#Use # to comment out everything after it
-'''Multiline comment
-no need to # everytime
-'''
+emp_file = open('employees.txt')
 
-#try except
+print(emp_file.readable())
+#print(emp_file.read()) #reads whole file
+print(emp_file.readline())
+print(emp_file.readline())
 
-#number = int(input("Enter an integer"))
-#print(number)       #everything works if user enters integer otherwise breaks the program
+#print(emp_file.readlines())   #reads each line as list
 
-try:
-    number2 = int(input("Enter an integer"))
-    print(number2)
-except ZeroDivisionError:
-    print("Divided by 0")
-except ValueError as err:
-    #print("Invalid input")
-    print(err)
+for employee in emp_file.readlines(): #two lines already read
+    print("Lines: "+employee)
+emp_file.close()
