@@ -1,15 +1,16 @@
-#Translator that translates all vowels to 'g'
-def translate(phrase):
-    translation = ""
-    for letter in phrase:
-        if letter in "AEIOUaeiou":
-            #translation += 'g'
-            if letter.isupper():
-                translation += 'G'
-            else:
-                translation += 'g'
-        else:
-            translation += letter
-    return translation
+#Single line comment
+#Use # to comment out everything after it
+'''Multiline comment
+no need to # everytime
+'''
 
-print(translate(input("Enter Phrase: ")))
+#try except
+
+#number = int(input("Enter an integer"))
+#print(number)       #everything works if user enters integer otherwise breaks the program
+
+try:
+    number2 = int(input("Enter an integer"))
+    print(number2)
+except:
+    print("Invalid input")
