@@ -1,17 +1,27 @@
-secret_word = "giraffe"
-guess = ""
-guess_count = 0
-guess_limit = 3
-out_of_guesses = False
+for letter in "Giraffe":
+    print(letter)
 
-while guess != secret_word and not(out_of_guesses):
-    if guess_count < guess_limit and not(out_of_guesses):
-        guess = input("Enter Guess: ")
-        guess_count += 1
+
+friends = ["Jim", "Karen", "Kevin"]
+for friend in friends:
+    print(friend)
+
+for index in range(4): # 0 1 2 3
+    print(index)
+
+
+for index in range(9, 15): #9 10 11 12 13 14
+    print(index)
+
+for index in range(len(friends)):
+    print(friends[index])
+
+for index in range(5):
+    if index==0:
+        print("First iteration")
     else:
-        out_of_guesses = True
+        print("Not first")
 
-if out_of_guesses:
-    print("You lose")
-else:
-    print("You won")
+
+
+    
