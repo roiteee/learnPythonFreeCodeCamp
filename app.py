@@ -1,12 +1,9 @@
-emp_file = open('employees.txt')
+employee_file = open('employees.txt','a') #appends at the end of file
 
-print(emp_file.readable())
-#print(emp_file.read()) #reads whole file
-print(emp_file.readline())
-print(emp_file.readline())
+employee_file.write("Toby - Human Resources")
+employee_file.write("\nKelly - Customer Services")  #\n puts next line
+employee_file.close()
 
-#print(emp_file.readlines())   #reads each line as list
-
-for employee in emp_file.readlines(): #two lines already read
-    print("Lines: "+employee)
-emp_file.close()
+employee_file = open('employees.txt', 'w') #overrites the file
+employee_file.write("Rick - Salesman")
+employee_file.close()
