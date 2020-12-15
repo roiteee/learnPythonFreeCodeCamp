@@ -1,5 +1,10 @@
-from Student import Student
+from Chef import Chef
+from ChineseChef import ChineseChef
 
-student1 = Student("Coco", "Mathematics", 3.1)
+myChef = Chef()
+myChef.make_chicken()
 
-print(student1.on_honor_roll())
+myChineseChef = ChineseChef()
+myChineseChef.make_chicken() #myChinese chef inherits make_chicken() from Chef class
+myChineseChef.make_special_dish() #overrides method from Chef
+
