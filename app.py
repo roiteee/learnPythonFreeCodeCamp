@@ -1,3 +1,5 @@
-import useful_tools # useful_tools.py file  
+#install module
+#pip install python-docx
+#uninstall
+#pip uninstall python-docx
 
-print(useful_tools.roll_dice(10))
